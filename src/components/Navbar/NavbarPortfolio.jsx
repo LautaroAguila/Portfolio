@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu } from "lucide-react";
 import "./NavbarPortfolio.css";
+import Logo from "../../assets/logo.png";
 
 const NavbarPortfolio = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -82,7 +83,7 @@ const NavbarPortfolio = () => {
             href="#"
           >
             <motion.img
-              src="src/assets/logo.png"
+              src={Logo}
               alt="Logo"
               className="navbar-logo"
               
@@ -141,7 +142,7 @@ const NavbarPortfolio = () => {
             >
               {/* Logo dentro del menú móvil */}
               <motion.img
-                src="src/assets/logo.png"
+                src={Logo}
                 alt="Logo"
                 className="navbar-logo mb-4"
                 style={{

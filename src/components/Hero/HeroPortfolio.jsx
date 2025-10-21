@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Container, Row, Col, Button, Nav } from "react-bootstrap";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./HeroPortfolio.css";
+import Foto from "../../assets/yo.png"
 
 const HeroPortfolio = () => {
   return (
@@ -45,7 +46,7 @@ const HeroPortfolio = () => {
             className="hero-right d-flex justify-content-center align-items-end"
           >
             <motion.img
-              src="src\assets\yo.png"
+              src={Foto}
               alt="Profile"
               className="profile-img"
               initial={{ opacity: 0, x: 100 }}

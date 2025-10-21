@@ -2,26 +2,28 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "./Projects.css";
+import Lisa from "./assets/LISA.JPG";
+import Asistent from "./assets/asistent.JPG"
 
 const projects = [
   {
     title: "Asistent",
-    img: "src/components/Projects/assets/asistent.JPG",
+    img: Lisa,
     link: "https://tusitio1.com",
   },
   {
     title: "LISA",
-    img: "src/components/Projects/assets/LISA.JPG",
+    img: Asistent,
     link: "https://tusitio2.com",
   },
   {
     title: "Portfolio Personal",
-    img: "src/components/Projects/assets/LISA.JPG",
+    img: Asistent,
     link: "https://tusitio3.com",
   },
   {
     title: "Dashboard Admin",
-    img: "src/components/Projects/assets/LISA.JPG",
+    img: Asistent,
     link: "https://tusitio4.com",
   },
 ];
