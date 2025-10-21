@@ -1,0 +1,55 @@
+.footer-section {
+  background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icons a {
+  color: #eee;
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #8e2de2;
+  transform: translateY(-3px);
+}
+
+.back-to-top {
+  background-color: #8e2de2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+  background-color: #6921ac;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .social-icons a {
+    font-size: 1.6rem;
+    margin: 0 0.8rem;
+  }
+
+  .back-to-top {
+    width: 42px;
+    height: 42px;
+  }
+}

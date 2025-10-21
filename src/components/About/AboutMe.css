@@ -1,0 +1,138 @@
+.about-section {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f7f7f7 0%, #eaeaea 100%);
+  color: #111;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---- Fondo decorativo ---- */
+.about-section::before,
+.about-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.3;
+  z-index: 0;
+}
+.about-section::before {
+  top: -100px;
+  left: -100px;
+  width: 250px;
+  height: 250px;
+  background: #8e2de2;
+}
+.about-section::after {
+  bottom: -120px;
+  right: -120px;
+  width: 300px;
+  height: 300px;
+  background: #4a00e0;
+}
+
+/* ---- Tarjeta ---- */
+.about-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 850px;
+  z-index: 2;
+  text-align: left;
+  position: relative;
+}
+
+/* ---- Títulos ---- */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  position: relative;
+}
+.about-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #8e2de2;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111;
+  position: relative;
+}
+.sub-title::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #8e2de2;
+}
+
+/* ---- Texto ---- */
+.about-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.about-text span,
+.highlight {
+  color: #8e2de2;
+  font-weight: 600;
+}
+
+.about-block {
+  margin-top: 2.5rem;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+.about-small {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+/* ---- Animaciones ---- */
+.about-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 2rem;
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+  .about-title::after,
+  .sub-title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about-list li {
+    text-align: left;
+  }
+}
