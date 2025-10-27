@@ -29,12 +29,12 @@ const projects = [
   {
     title: "Sitio web basico",
     img: Basico,
-    link: "https://tusitio4.com",
+    link: "https://lordch2.vercel.app/",
   },
   {
     title: "Sitio web personalizable",
     img: Premium,
-    link: "https://tusitio4.com",
+    link: "https://lordch.vercel.app/",
   },
   {
     title: "Tu web a medida",
