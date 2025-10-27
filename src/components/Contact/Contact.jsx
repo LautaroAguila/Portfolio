@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
@@ -17,9 +18,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert("Message sent!");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+
+    // ⚡ Enviar con EmailJS
+    emailjs
+      .send(
+        "service_zwsjghu", // ⚠️ reemplazá con tu Service ID
+        "template_qikruxz", // ⚠️ reemplazá con tu Template ID
+        formData,
+        "DfkRs-P8kpSCgCcKw" // ⚠️ reemplazá con tu Public Key
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("¡Mensaje enviado con éxito!");
+          setFormData({ name: "", email: "", phone: "", message: "" });
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          alert("Error al enviar el mensaje. Intenta nuevamente.");
+        }
+      );
   };
 
   return (
@@ -33,7 +51,6 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="contact-title">Contacto</h2>
-          
         </motion.div>
 
         <motion.div
@@ -69,7 +86,7 @@ const Contact = () => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="phone">
-              <Form.Label>Telefono</Form.Label>
+              <Form.Label>Teléfono</Form.Label>
               <Form.Control
                 type="tel"
                 name="phone"

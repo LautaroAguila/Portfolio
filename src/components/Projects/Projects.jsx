@@ -3,28 +3,43 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "./Projects.css";
 import Lisa from "./assets/LISA.JPG";
-import Asistent from "./assets/asistent.JPG"
+import Asistent from "./assets/asistent.JPG";
+import Basico from "./assets/empresas.JPG";
+import Premium from "./assets/empresas2.JPG";
+import Portafolio from "./assets/portfolio.JPG";
+import Whatsapp from "./assets/WhatsApp.svg.webp";
+
 
 const projects = [
   {
     title: "Asistent",
-    img: Lisa,
-    link: "https://tusitio1.com",
+    img: Asistent,
+    link: "https://asistent-ten.vercel.app/login",
   },
   {
     title: "LISA",
-    img: Asistent,
-    link: "https://tusitio2.com",
+    img: Lisa,
+    link: "https://lisa-lake.vercel.app/login",
   },
   {
-    title: "Portfolio Personal",
-    img: Asistent,
-    link: "https://tusitio3.com",
+    title: "Portafolio",
+    img: Portafolio,
+    link: "https://portfolio-blond-five-7m9xa81es2.vercel.app/",
   },
   {
-    title: "Dashboard Admin",
-    img: Asistent,
+    title: "Sitio web basico",
+    img: Basico,
     link: "https://tusitio4.com",
+  },
+  {
+    title: "Sitio web personalizable",
+    img: Premium,
+    link: "https://tusitio4.com",
+  },
+  {
+    title: "Tu web a medida",
+    img: Whatsapp,
+    link: "https://w.app/jaf7ng",
   },
 ];
 

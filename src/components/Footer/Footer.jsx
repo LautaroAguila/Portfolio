@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./Footer.css";
 
@@ -19,8 +19,8 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <a href="#" aria-label="Email">
-            <FaEnvelope />
+          <a href="https://w.app/jaf7ng" aria-label="Email">
+            <FaWhatsapp />
           </a>
           <a href="https://github.com/LautaroAguila" aria-label="GitHub">
             <FaGithub />

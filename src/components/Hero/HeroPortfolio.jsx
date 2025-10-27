@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col, Button, Nav } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import "./HeroPortfolio.css";
 import Foto from "../../assets/yo.png"
 
@@ -27,8 +27,8 @@ const HeroPortfolio = () => {
               <p className="hero-role">Desarrollador Web / Estudiante de Data Science</p>
 
               <div className="social-icons mt-4">
-                <a href="lautaroaguilar.c@gmail.com">
-                  <FaEnvelope />
+                <a href="https://w.app/jaf7ng">
+                  <FaWhatsapp />
                 </a>
                 <a href="https://github.com/LautaroAguila">
                   <FaGithub />
